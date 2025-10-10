@@ -1,0 +1,750 @@
+/* ====== BASE ====== */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: #e0dbce;
+  color: #553b2b;
+}
+.autor {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color:#e0dbce;
+  padding: 10px;
+  margin-left: 0;
+  background: #553b2b;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #e0dbce;
+}
+
+
+
+/* ====== CABECALHO ====== */
+
+
+.inicio{
+  background-color: #553b2b;
+  padding: 15px 30px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logoGiane {
+  color: #e0dbce;
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.servicos{
+font-family: 'Poppins', sans-serif;
+padding: 20px 60px;
+justify-content: space-around;
+display: none;
+display: block;
+display: flex;
+
+}
+.servicos a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+.menu-toggle {
+  display: none;
+ font-size: 28px;
+  color: #e0dbce;   /* cor visível sobre o fundo marrom */
+  cursor: pointer;
+}
+   
+
+header nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ====== APRESENTAÇAO ====== */
+
+.ApresentacaoGi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 40px;
+}
+.testoSaude{
+  font-family: 'Poppins', sans-serif;
+  flex: 1;
+  max-width: 50%;
+  color: #553b2b;
+}
+.textoPossivel {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #553b2b;
+}
+.textoSaude p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #553b2b;
+}
+
+.imagemOne{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}
+.imagemOne img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.barra {
+  border: none;
+  height: 40px;
+  background-color: #553b2b;
+  margin: 60px 0;
+}  
+.barraDois{
+  border: none;
+  height: 20px;
+  background-color: #e0dbce;
+  margin:20px 0;
+}      
+.texto .linha {
+  height: 2px;
+  background:#553b2b ;
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+}
+.btnApresentacao{
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #cae569;
+  color: #333;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: #ddfc86;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* ====== SEÇÃO SERVIÇOS + ABORDAGEM ====== */
+.tituloMeus{
+  font-family: 'Poppins', sans-serif;
+  color: #553b2b;
+}
+.textoMeus{
+  font-family: 'Poppins', sans-serif;
+}
+.tituloMinha{
+  font-family: 'Poppins', sans-serif;
+  color: #553b2b;
+}
+.textoMinha{
+  font-family: 'Poppins', sans-serif;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.two-columns .col {
+  flex: 1;
+  min-width: 320px;
+  padding: 0 20px;
+}
+
+
+/* ====== SOBRE MIM ====== */
+
+
+ .SobreMim {
+  
+  color: #cddc39;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.SobreMim {
+  display: flex;
+  position: relative;
+  padding: 80px;
+  color: #222;
+  text-align: left;
+  background: rgba(255,255,255,0.85); /* leve sobreposição para o texto não sumir */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.SobreMim::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('img/imagemFundo.jpg') center/cover no-repeat;
+  opacity: 0.25; /* deixa a imagem clara atrás do texto */
+  z-index: -1;
+  border-radius: 10px;
+}
+
+
+.container-sobre {
+  background: #553b2b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: nowrap; /* força lado a lado */
+}
+
+.texto-sobre {
+  flex: 1;
+  min-width: 300px;
+}
+
+.tituloSobre {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:#e0dbce;
+  margin: 30px;
+}
+
+.textoSobreMim{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #fff;
+  margin: 50px;
+}
+
+.caixa-reserva {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #d4f06b;
+  color: #333;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin: 50px;
+}
+
+.btn-reserva:hover {
+  background-color: #c1de5a;
+}
+
+.imagemTwo {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagemTwo img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.two-columns .col:first-child {
+  border-right: 3px solid #553b2b;
+}
+
+
+/* ====== CONSULTORIOS ====== */
+
+
+.consultorio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  background: #e0dbce;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.box .contente {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e0dbce;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+.tituloConsultorio{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  color: #e0dbce;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.textoConsultorio{
+  font-family: 'Poppins', sans-serif;
+  color: #e0dbce;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+/* ====== TESTEMUNHOS ====== */
+
+.testemunhos {
+  background-color: #e0dbce;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.testemunhos h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #4b2e23;
+}
+
+.container-testemunhos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card-testemunho {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  text-align: left;
+}
+
+.card-testemunho p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.card-testemunho span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #4b2e23;
+}
+.tituloTestemunho{
+  font-family: 'Poppins', sans-serif;
+}
+.textoTestemunho{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ====== ESPECIALIDADES====== */
+
+.sectionEspecialidades{
+  background: #553b2b;
+  min-height:70vh;
+  padding: 60px 80px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+.tituloEspecialidades{
+  font-family: 'Poppins', sans-serif;
+  font-size:30px;
+  font-weight:400;
+  margin:0 0 50px;
+  letter-spacing:1px;
+  color:#e6d8c9;
+  text-align:center;
+}
+
+.containerPolygnos{
+  width:100%;
+  max-width:1150px;
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  align-items:flex-start;
+}
+
+.coluna{
+  width:48%;
+  display:flex;
+  flex-direction:column;
+  gap:56px;
+}
+
+.itemEspecialidade{
+  color: #cae569;
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+
+.icon{
+  width:86px;
+  height:86px;
+  flex:0 0 86px;
+  fill:#cae569;
+  stroke:none;
+}
+
+.icon circle, .icon path, .icon polygon, .icon rect{
+  fill:#cae569;
+}
+
+.itemTextoEsp{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  line-height:1.4;
+  font-size:18px;
+  max-width:420px;
+  color:var(--text);
+  font-weight:300;
+}
+
+/* ====== VIDA====== */
+
+
+.vida {
+  position: relative;
+  height: 100vh;
+  background: url("img/imagemVida.avif") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 80px;
+  color: #fff;
+}
+
+.VidaBoa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+}
+
+.vidaBoaBastante {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.textoVida{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.botaoVida {
+  display: inline-block;
+  background-color: #5a4a3a;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3a2f25;
+}
+
+/* ====== FAQ ====== */
+
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 80px;
+  background: #e0dbce;
+  position: relative;
+}
+
+.faq-container {
+  max-width: 600px;
+}
+
+.faq-container h2 {
+  font-size: 2rem;
+  color: #4a2e2b;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.faq-container hr {
+  border: none;
+  border-top: 3px solid #4a2e2b;
+  width: 60%;
+  margin: 0 0 20px 0;
+}
+
+.faq-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-item {
+  margin-bottom: 18px;
+}
+
+.faq-item button {
+  font-size: 1.3rem;
+  color: #4a2e2b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  padding: 5px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.faq-resposta {
+  display: none;
+  font-size: 1.1rem;
+  color: #4a2e2b;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+
+.faq-item.active .faq-resposta {
+  display: block;
+}
+.faqTitulo{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* ====== NAV ====== */
+nav {
+  background:#e0dbce;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+nav a {
+  color: #553b2b;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffca28;
+}
+
+/* ====== SECTIONS ====== */
+
+section {
+  padding: 60px 40px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+blockquote {
+  background: #f3e5f5;
+  border-left: 5px solid #6a1b9a;
+  padding: 15px;
+  margin: 15px 0;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* ====== FOOTER ====== */
+
+footer {
+background-color: #e4f970;
+  padding: 25px 20px;
+  text-align: center;
+  color: #3a2a18;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.textoInicie{
+  color: #553b2b;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 60px;
+}
+
+.footer-logo span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.footer-info {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-info i {
+  color: #3a2a18;
+  margin-right: 6px;
+}
+
+.footer-info a {
+  color: #3a2a18;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-info a:hover {
+  color: #5a3b26;
+  text-decoration: underline;
+}
+
+footer h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.footer-whatsapp .fa-whatsapp {
+  margin-right: 6px;
+  color: #25d366;
+  font-size: 1.2em;
+}
+
+.btn-contato {
+  background-color: #3a2a18;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-contato:hover {
+  background-color: #5a3b26;
+}
+
+.footer-whatsapp img {
+  width: 45px;
+}
+
+.email {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: #3a2a18;
+  font-size: 22px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #5a3b26;
+}
+
