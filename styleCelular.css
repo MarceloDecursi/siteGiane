@@ -102,5 +102,26 @@
   .footer-social a {
     font-size: 20px;
   }
+  .whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-fixo:hover {
+    transform: scale(1.1);
+  }
 
   

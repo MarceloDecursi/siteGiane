@@ -17,4 +17,7 @@
     padding: 30px 40px;
     gap: 15px;
   }
+  .whatsapp-fixo {
+    display: none !important;
+  }
 }
